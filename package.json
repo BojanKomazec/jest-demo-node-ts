@@ -1,0 +1,29 @@
+{
+  "name": "browser-wordpress-sync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./build/",
+    "test": "echo \"Jesterday, all my troubles seemed so far away...\" && jest",
+    "build": "npx rollup -c",
+    "start": "node ./build/wpsync.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.int.avast.com:browser/browser-wordpress-sync.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.7.1",
+    "rollup": "^1.9.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "ts-jest": "^24.0.2",
+    "tslib": "^1.9.3",
+    "typescript": "^3.4.2"
+  },
+  "dependencies": {}
+}
